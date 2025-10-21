@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Mahon - Social Media</title>
+    <!-- Cdn link -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+
+
+{% block content %}
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mahon - Social Media</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container grid">
+            <div class="text__fourTable">
+                <div class="TwoTable">
+                    <div class="first">
+                        <h2>Mahon</h2>
+                         {% for p in text %}
+                        <ul>
+                            <li><a href="{{p.link_right}}">
+                                {{p.text_right}}</a></li>
+
+                        </ul>
+                         {% endfor %}
+                    </div>
+                </div>
+                <div class="FourTable">
+                    <div class="first2">
+                        <h2>RED GIANT</h2>
+                         {% for p in text1 %}
+                        <ul>
+                            <li><a href="{{p.link_left}}">
+                                {{p.text_left}}</a></li>
+
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 by Burhon developer.  All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+{% endblock %}
+
+</html>

@@ -1,0 +1,9 @@
+1.  docker-compose build        --------Image yaratish (build)
+
+2. docker-compose up             -------- Container ishga tushirish
+
+3. docker ps         -------Ishlayotgan containerlarni tekshirish
+
+4. docker-compose logs -f     ----- Loglarni real vaqt rejimida ko‘rish
+
+5. docker-compose down       ------ Container to‘xtatish
