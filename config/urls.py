@@ -4,11 +4,10 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-
 urlpatterns = [
     #path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('admin/', admin.site.urls),
-    path('', include('live.urls'))
+    path('api/v1/', include('live.urls'))
 
 
 ]

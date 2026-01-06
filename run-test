@@ -1,0 +1,5 @@
+1. pytest    -----  test ni ishga tushirish
+
+2. pytest-cov    ----- kutubxonani ornatish loyihani qancha qismi test qilinadigani tekshirish
+
+3. pytest --cov=.     ----- jadaval holatida korish
